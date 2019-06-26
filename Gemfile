@@ -5,8 +5,6 @@ ruby '2.4.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
@@ -82,4 +80,12 @@ gem 'rails-i18n'
 # A library for generating fake data such as names, addresses, and phone numbers.
 gem 'faker'
 gem 'jquery-rails'
+group :production do
+  #heroku pendencias
+  gem 'pg'
+  gem 'rails_12factor'
+end
 
+group :development do
+  gem 'sqlite3'
+end
