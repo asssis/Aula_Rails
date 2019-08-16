@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   get '/bemvindo' => 'home#index'
-  
+  get '/home/show' => 'home#show'
   root 'home#index'
   
   resources :phones

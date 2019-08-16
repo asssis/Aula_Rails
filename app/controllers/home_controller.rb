@@ -1,5 +1,7 @@
 class HomeController < ApplicationController
   def index
-    adsf
+  end
+  def show
+    @nome = "assis"
   end
 end
